@@ -3,7 +3,6 @@ import '../HomeBanner.css';
 import video1 from '../cave.mp4';
 import video2 from '../space3.mp4';
 import video3 from '../video3.mp4';
-import Typed from 'react-typed';
 
 const HomeBanner = () => {
   const [backgroundIndex, setbackgroundIndex] = useState(0);
@@ -33,19 +32,7 @@ const HomeBanner = () => {
           <div className="col-md-12 col-lg-12 banner-text" data-wow-delay="0.4s">
             <h2>Welcome to your</h2>
             <h3 className="cd-headline">
-              <Typed
-                strings={[
-                  'mechanical cave drawer',
-                  'intergalactic word architect',
-                  'mythical tale spinner',
-                ]}
-                typeSpeed={70}
-                backSpeed={50}
-                startDelay={300}
-                backDelay={7500}
-                loop
-                onStringTyped={handleStringTyped}
-              />
+            mechanical cave drawer
             </h3>
             <div className="call-to-action">
               <p>What does it mean for a machine to draw?</p>
