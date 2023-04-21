@@ -16,8 +16,11 @@ COPY . .
 # Build the application
 RUN npm run build
 
+# Install serve globally
+RUN npm install -g serve
+
 # Expose the port the app runs on
 EXPOSE 3000
 
-# Define the command to run the app
-CMD ["npm", "start"]
+# Define the command to run the app using serve
+CMD ["serve", "-s", "build", "-l", "3000", "-n", "0.0.0.0"]
